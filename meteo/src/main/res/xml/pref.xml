@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.maiknack.meteo.pref.IPAddressPreference
+        android:key="@string/address_key"
+        android:summary="@string/address_summary"
+        android:title="@string/address_title"
+        android:defaultValue="192.168.1.27">
+    </com.maiknack.meteo.pref.IPAddressPreference>
+    <com.maiknack.meteo.pref.PortPreference
+        android:key="@string/port_key"
+        android:summary="@string/port_summary"
+        android:title="@string/port_summary"
+        android:defaultValue="12001">
+    </com.maiknack.meteo.pref.PortPreference>
+</PreferenceScreen>

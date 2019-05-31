@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Meteo</string>
+    <string name="result">Temperature: %1$.2f °C\nPressure: %2$.1f mm hg</string>
+    <string name="connection_fail">No connection with the server</string>
+
+    <string name="address_key">ip_address</string>
+    <string name="address_summary">IP address for connection</string>
+    <string name="address_title">IP address</string>
+    <string name="port_key">port</string>
+    <string name="port_summary">Port for connection</string>
+    <string name="port_title">Port</string>
+</resources>
