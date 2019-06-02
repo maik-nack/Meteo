@@ -38,7 +38,9 @@ class TcpClient {
 
             Log.d("TCP Client", "C: Connecting...");
 
-            try (Socket socket = new Socket(serverAddr, mPort)) {
+            Socket socket = new Socket(serverAddr, mPort);
+
+            try {
                 mMessageListener.connectionSuccessful();
 
                 mBufferIn = new LittleEndianDataInputStream(socket.getInputStream());
@@ -58,6 +60,8 @@ class TcpClient {
 
             } catch (Exception e) {
                 Log.e("TCP", "S: Error", e);
+            } finally {
+                socket.close();
             }
             mMessageListener.connectionFailed();
             return false;
